@@ -329,6 +329,7 @@ body {
 }
 
 .about-text p {
+    text-align: justify;
     margin-bottom: 1.5rem;
     color: var(--gray-light);
     font-size: 1.1rem;
@@ -611,16 +612,32 @@ body {
 }
 
 .organizer-img {
-    width: 80px;
-    height: 80px;
+    width: 72px; /* increased avatar size */
+    height: 72px; /* increased avatar size */
     border-radius: 50%;
+    overflow: hidden;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 1.5rem;
     flex-shrink: 0;
+}
+
+/* Image inside organizer avatar: cover, centered and slightly zoomed out so face fits */
+.organizer-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    transform: scale(1); /* zoom out slightly */
+    transform-origin: center;
+    transition: transform 160ms ease;
+}
+
+.organizer-info h3 {
+    font-size: 1.25rem; /* larger name */
+    font-weight: 700;
 }
 
 .organizer-info {
