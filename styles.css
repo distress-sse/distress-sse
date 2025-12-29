@@ -377,6 +377,13 @@ body {
     margin-bottom: 0.25rem;
 }
 
+.stat-number1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.25rem;
+}
+
 .stat-number sup {
     font-size: 1rem;
     font-weight: 600;
@@ -689,10 +696,11 @@ body {
 }
 
 .committee-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
