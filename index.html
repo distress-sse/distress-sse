@@ -3,247 +3,491 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DISTRESS workshop at IEEE ICBC 2026 — integrating blockchain immutability with privacy-preserving searchable encryption and off-chain storage.">
-    <title>DISTRESS @ IEEE ICBC 2026</title>
+    <meta name="description" content="DISTRESS 2026 - 1st Workshop on Decentralized Immutable Secure Tamper-Resistant Encrypted Searchable Storage at IEEE ICBC 2026">
+    <title>DISTRESS 2026 @ IEEE ICBC</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
-        <div class="header-inner">
-            <a class="brand" href="https://icbc2026.ieee-icbc.org/" aria-label="IEEE ICBC 2026">
-                <div class="brand-logo" aria-hidden="true">DISTRESS</div>
-            </a>
-            <nav class="main-nav" aria-label="Main navigation">
-                <a href="#about">About</a>
-                <a href="#objectives">Objectives</a>
-                <a href="#topics">Topics</a>
-                <a href="#cfp">Important Dates</a>
-                <a href="#organizers">Organizers</a>
-                <a href="#program">Program</a>
-                <a href="#submission">Paper Submission</a>
-                <a href="#contact">Contact</a>
+        <div class="header-bg"></div>
+        <div class="header-content">
+            <nav class="main-nav">
+                <div class="nav-brand">
+                    <span class="brand-icon">⛓️</span>
+                    <span class="brand-text">DISTRESS 2026</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#topics">Topics</a>
+                    <a href="#dates">Dates</a>
+                    <a href="#committee">Committee</a>
+                    <a href="#submission">Submission</a>
+                    <a href="https://icbc2026.ieee-icbc.org/" target="_blank" class="nav-external">IEEE ICBC 2026 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
-        </div>
-        <div class="hero">
-            <h1>DISTRESS 2026</h1>
-            <div class="subtitle">Decentralized Immutable Secure Tamper-Resistant Encrypted Searchable Storage</div>
-            <div class="date-location">5 June 2026 | Brisbane, Australia</div>
-            <div class="hero-links">Workshop at <a href="https://icbc2026.ieee-icbc.org/">IEEE International Conference on Blockchain and Cryptocurrency (ICBC) 2026</a></div>
+            
+            <div class="hero">
+                <div class="hero-badge">1st Workshop Edition</div>
+                <h1 class="hero-title">
+                    <span class="hero-title-main">DISTRESS 2026</span>
+                    <span class="hero-title-sub">Decentralized Immutable Secure Tamper-Resistant Encrypted Searchable Storage</span>
+                </h1>
+                <div class="hero-meta">
+                    <span class="hero-date"><i class="far fa-calendar"></i> 5 June 2026</span>
+                    <span class="hero-location"><i class="fas fa-map-marker-alt"></i> Brisbane, Australia</span>
+                    <span class="hero-conference"><i class="fas fa-link"></i> Co-located with IEEE ICBC 2026</span>
+                </div>
+                <div class="hero-cta">
+                    <a href="#submission" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Submit Paper
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
+    <main class="main-content">
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-robot"></i> About DISTRESS</h2>
+                    <p class="section-subtitle">1st Workshop on Decentralized Immutable Secure Tamper-Resistant Encrypted Searchable Storage</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>DISTRESS 2026 is the <strong>first edition</strong> of a workshop dedicated to the intersection of blockchain immutability and privacy-preserving searchable encryption. As decentralized applications increasingly handle sensitive data, we face a critical challenge: how to enable efficient, private search over encrypted data while maintaining the verifiable integrity guarantees that blockchains provide.</p>
                         
-    <div class="container">
-
-    <section id="about">
-        <h2>About</h2>
-        <p style="text-align: justify;">DISTRESS is a one-day workshop at IEEE ICBC 2026 that brings together researchers and practitioners to advance practical systems integrating blockchain’s immutability, auditability, and incentive mechanisms with cryptographic techniques for privacy-preserving search over encrypted data. We focus on translating advances in searchable symmetric encryption (SSE) into deployable architectures that combine on-chain verification, gas and storage-efficient index commitments, and off-chain encrypted storage - enabling verifiable, private, and incentive-aligned search and retrieval in decentralized environments.</p>
-        <!-- <p>The DISTRESS workshop aims to advance the intersection of blockchain technology and searchable encryption by fostering research on practical systems that integrate blockchain's immutability, auditability, and incentive mechanisms with cryptographic techniques for privacy-preserving search over encrypted data.</p> -->
-        <!-- <p>DISTRESS — Decentralized Immutable Secure Tamper-Resistant Encrypted Searchable Storage is a one-day workshop at IEEE ICBC 2026 that brings together researchers and practitioners working at the intersection of blockchain systems and privacy-preserving searchable encryption. Our goal is to bridge cryptographic advances in searchable symmetric encryption (SSE) with practical, deployable blockchain architectures—so that immutable ledgers and off-chain encrypted storage can support verifiable, privacy-preserving search and retrieval.</p> -->
-    </section>
-
-    <section id="objectives">
-        <h2>Objectives</h2>
-        <ul>
-            <li>Bridge theory and practice in searchable symmetric encryption (SSE) and blockchain deployments</li>
-            <li>Explore blockchain-specific constraints and solutions for SSE</li>
-            <li>Evaluate system trade-offs in blockchain-SSE architectures</li>
-            <li>Foster cross-disciplinary collaboration</li>
-            <li>Catalyze real-world applications in regulated data marketplaces and decentralized healthcare</li>
-        </ul>
-        <!-- 
-            <h3>Who should attend</h3>
-            <p>Researchers and engineers in cryptography, blockchain systems, distributed storage, privacy/forensics, and AI/LLM retrieval — as well as industry practitioners building regulated or privacy-sensitive data services — will find the workshop especially relevant.</p>
-        -->
-    </section>
-
-    <section id="topics">
-        <h2>Topics of Interest (including but not limited to)</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Search & Encrypted Storage</h3>
-                <ul>
-                    <li>Searchable symmetric encryption (SSE)</li>
-                    <li>Verifiable search</li>
-                    <li>Privacy-preserving index</li>
-                    <li>Dynamic and multi-user SSE</li>
-                    <li>Richer query</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Blockchain Integration</h3>
-                <ul>
-                    <li>On-chain key management</li>
-                    <li>State-channels and rollups</li>
-                    <li>Off-chain storage architectures</li>
-                    <li>Token economics for search services</li>
-                    <li>Blockchain-integrated SSE</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Applications</h3>
-                <ul>
-                    <li>Encrypted blockchain databases</li>
-                    <li>Privacy-preserving ML</li>
-                    <li>Decentralized healthcare records</li>
-                    <li>Supply-chain archives</li>
-                    <li>Regulated data marketplaces</li>
-                    <li>Private LLM retrieval</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="cfp">
-        <h2>Important Dates / Call for Papers</h2>
-        <div class="dates">
-            <div class="date-item">
-                <span>Paper Submission Deadline:</span>
-                <span>March 25, 2026</span>
-            </div>
-            <div class="date-item">
-                <span>Notification of Acceptance:</span>
-                <span>April 20, 2026</span>
-            </div>
-            <div class="date-item">
-                <span>Camera-ready Version:</span>
-                <span>April 30, 2026</span>
-            </div>
-            <div class="date-item">
-                <span>Workshop Date:</span>
-                <span>June 5, 2026</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="organizers">
-        <h2>Organizers</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="organizer">
-                    <img src="pictures/subhra.jpg" alt="Photo of Dr. Subhra Mazumdar" class="organizer-photo">
-                    <div class="organizer-info">
-                        <h3>Dr. Subhra Mazumdar</h3>
-                        <p>Assistant Professor<br>
-                        Indian Institute of Technology Indore<br>
-                        Email: <a href="mailto:subhra.mazumdar@iiti.ac.in">subhra.mazumdar@iiti.ac.in</a></p>
+                        <p>The workshop aims to bridge cryptographic advances in Searchable Symmetric Encryption (SSE) with practical blockchain systems, addressing real-world constraints like gas costs, on-chain footprint, and regulatory compliance. We bring together researchers and practitioners from cryptography, blockchain engineering, distributed systems, and AI/LLM retrieval to design the next generation of verifiable, private decentralized storage.</p>
+                        
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-bullseye"></i> Workshop Focus</h3>
+                            <p>Developing practical architectures that combine on-chain verification with off-chain encrypted storage, enabling private yet accountable search in decentralized environments such as healthcare, supply chains, and regulated data marketplaces.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">1<sup>st</sup></div>
+                            <div class="stat-label">Edition</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Keynotes</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Papers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">Full Day</div>
+                            <div class="stat-label">Format</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="organizer">
-                    <img src="pictures/avi.jpg" alt="Photo of Dr. Avishek Majumder" class="organizer-photo">
-                    <div class="organizer-info">
-                        <h3>Dr. Avishek Majumder</h3>
-                        <p>Assistant Professor<br>
-                        UPES, Dehradun<br>
-                        Email: <a href="mailto:avishek.majumder1991@gmail.com">avishek.majumder1991@gmail.com</a></p>
+        </section>
+
+        <section id="topics" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-search"></i> Topics of Interest</h2>
+                    <p class="section-subtitle">Technical areas relevant to blockchain-based encrypted search and storage</p>
+                </div>
+                
+                <div class="topics-grid">
+                    <div class="topic-item">
+                        <div class="topic-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Searchable Symmetric Encryption</h3>
+                        <ul>
+                            <li>Dynamic and multi-user SSE schemes</li>
+                            <li>Verifiable SSE with succinct proofs</li>
+                            <li>Privacy-preserving index commitments</li>
+                            <li>Forward/backward security in SSE</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-item">
+                        <div class="topic-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>Blockchain Integration</h3>
+                        <ul>
+                            <li>Gas-optimized on-chain verification</li>
+                            <li>State channels & rollups for SSE</li>
+                            <li>On-chain key management & revocation</li>
+                            <li>Cross-chain searchability protocols</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-item">
+                        <div class="topic-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Storage Architectures</h3>
+                        <ul>
+                            <li>IPFS/Filecoin with on-chain anchoring</li>
+                            <li>Decentralized object stores</li>
+                            <li>Data availability proofs</li>
+                            <li>Merkle/accumulator commitments</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-item">
+                        <div class="topic-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Performance & Security</h3>
+                        <ul>
+                            <li>Privacy leakage analysis</li>
+                            <li>Access-pattern mitigation</li>
+                            <li>Benchmarking blockchain-SSE systems</li>
+                            <li>Formal verification of smart contracts</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-item">
+                        <div class="topic-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>Applications</h3>
+                        <ul>
+                            <li>Private LLM/retrieval-augmented generation</li>
+                            <li>Decentralized healthcare records</li>
+                            <li>Supply-chain transparency</li>
+                            <li>Regulated data marketplaces</li>
+                            <li>Encrypted blockchain databases</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="topic-item">
+                        <div class="topic-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Economics & Incentives</h3>
+                        <ul>
+                            <li>Token economics for search services</li>
+                            <li>Incentive-compatible query processing</li>
+                            <li>Decentralized governance of indexes</li>
+                            <li>Compliance enforcement mechanisms</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    </div>
+        </section>
 
+        <section id="dates" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="far fa-calendar-alt"></i> Important Dates</h2>
+                    <p class="section-subtitle">All deadlines are at 23:59 AoE (Anywhere on Earth)</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">25 March 2026</div>
+                        <div class="timeline-content">
+                            <h3>Paper Submission Deadline</h3>
+                            <p>Full papers (8 pages), short papers (4 pages), demo descriptions (2-4 pages)</p>
+                        </div>
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">20 April 2026</div>
+                        <div class="timeline-content">
+                            <h3>Notification of Acceptance</h3>
+                            <p>Double-blind peer review with at least 3 reviewers per submission</p>
+                        </div>
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">30 April 2026</div>
+                        <div class="timeline-content">
+                            <h3>Camera-ready Submission</h3>
+                            <p>Final versions for IEEE ICBC 2026 proceedings (IEEE Xplore)</p>
+                        </div>
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">5 June 2026</div>
+                        <div class="timeline-content">
+                            <h3>Workshop Day</h3>
+                            <p>Full-day workshop at IEEE ICBC 2026 in Brisbane, Australia</p>
+                        </div>
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="notice-box">
+                    <i class="fas fa-info-circle"></i>
+                    <p>All accepted papers will be published in the IEEE ICBC 2026 workshop proceedings and submitted to IEEE Xplore®.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="committee" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-users"></i> Organizers & Committee</h2>
+                    <p class="section-subtitle">Workshop chairs and program committee</p>
+                </div>
+                
+                <div class="organizers-grid">
+                    <div class="organizer-card">
+                        <div class="organizer-img">
+                            <div class="img-placeholder">SM</div>
+                        </div>
+                        <div class="organizer-info">
+                            <h3>Subhra Mazumdar</h3>
+                            <p class="organizer-affiliation">Indian Institute of Technology Indore, India</p>
+                            <p class="organizer-expertise">Blockchain Scalability, Data Privacy, Post-Quantum Cryptography</p>
+                            <a href="mailto:subhra.mazumdar@iiti.ac.in" class="organizer-email">
+                                <i class="fas fa-envelope"></i> subhra.mazumdar@iiti.ac.in
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="organizer-card">
+                        <div class="organizer-img">
+                            <div class="img-placeholder">AM</div>
+                        </div>
+                        <div class="organizer-info">
+                            <h3>Avishek Majumder</h3>
+                            <p class="organizer-affiliation">UPES, Dehradun, India</p>
+                            <p class="organizer-expertise">Searchable Symmetric Encryption, Applied Cryptography</p>
+                            <a href="mailto:avishek.majumder1991@gmail.com" class="organizer-email">
+                                <i class="fas fa-envelope"></i> avishek.majumder1991@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="committee-section">
+                    <h3><i class="fas fa-user-tie"></i> Program Committee</h3>
+                    <div class="committee-grid">
+                        <div class="committee-member">
+                            <h4>Debasish Pattanayak</h4>
+                            <p>Indian Institute of Technology Indore, India</p>
+                        </div>
+                        <div class="committee-member">
+                            <h4>Laltu Sardar</h4>
+                            <p>IISER Trivandrum, India</p>
+                        </div>
+                        <div class="committee-member">
+                            <h4>Mayank Raikwar</h4>
+                            <p>University of Oslo, Norway</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="submission" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-paper-plane"></i> Paper Submission</h2>
+                    <p class="section-subtitle">Submit your research to DISTRESS 2026</p>
+                </div>
+                
+                <div class="submission-guidelines">
+                    <div class="guideline-card">
+                        <div class="guideline-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Paper Types</h3>
+                        <ul>
+                            <li><strong>Full papers:</strong> Up to 8 pages (excluding references)</li>
+                            <li><strong>Short papers:</strong> Up to 4 pages</li>
+                            <li><strong>Demo papers:</strong> 2-4 pages describing systems/tools</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guideline-card">
+                        <div class="guideline-icon">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <h3>Review Process</h3>
+                        <ul>
+                            <li>Double-blind peer review</li>
+                            <li>Each paper reviewed by ≥ 3 PC members</li>
+                            <li>Criteria: novelty, technical soundness, relevance</li>
+                            <li>Accepted papers in IEEE ICBC proceedings</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guideline-card">
+                        <div class="guideline-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Formatting</h3>
+                        <ul>
+                            <li>Use IEEE conference template</li>
+                            <li>PDF format only</li>
+                            <li>Anonymous submission (no author names/affiliations)</li>
+                            <li>Submitted via EasyChair</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="submission-portal">
+                    <div class="portal-card">
+                        <h3><i class="fas fa-upload"></i> Submission Portal</h3>
+                        <p>Submit your paper through EasyChair. The submission link will be activated in December 2025.</p>
+                        
+                        <div class="portal-info">
+                            <div class="info-item">
+                                <i class="fas fa-lock"></i>
+                                <div>
+                                    <h4>Submission Deadline</h4>
+                                    <p><strong>25 March 2026</strong> (AoE)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-external-link-alt"></i>
+                                <div>
+                                    <h4>Submission Link</h4>
+                                    <p>Will be available here in December 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary btn-disabled">
+                            <i class="fas fa-lock"></i> Portal Opens December 2025
+                        </a>
+                        
+                        <p class="portal-note">
+                            <i class="fas fa-info-circle"></i>
+                            For questions about submission, contact the organizers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Join us at DISTRESS 2026</h2>
+                    <p>Be part of the first workshop dedicated to blockchain-based encrypted search and storage. Submit your research, attend the workshop, and help shape this emerging field.</p>
+                    <div class="cta-buttons">
+                        <a href="#dates" class="btn btn-primary">
+                            <i class="far fa-calendar-alt"></i> Important Dates
+                        </a>
+                        <a href="mailto:subhra.mazumdar@iiti.ac.in" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contact Organizers
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section id="program">
-        <h2>Program</h2>
-        <div class="card">
-            <p>Program details will be announced soon. Tentative items include:</p>
-            <ul>
-                <li>Invited keynote talks</li>
-                <li>Contributed presentations (oral presentations and posters)</li>
-                <li>Panel discussion</li>
-                <li>Q&amp;A sessions</li>
-            </ul>
-        </div>
-
-        <div class="schedule-row">
-                    <div class="schedule-col card">
-                        <h4>Schedule (tentative)</h4>
-                        <table class="compact-table" border="1" cellspacing="0" cellpadding="8">
-                            <thead>
-                                <tr>
-                                    <th>Time</th>
-                                    <th>Session</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>08:00 - 09:00</td><td>Registration</td></tr>
-                                <tr><td>09:00 - 09:15</td><td>Welcome</td></tr>
-                                <tr><td>09:15 - 10:15</td><td>Keynote</td></tr>
-                                <tr><td>10:15 - 10:30</td><td>Coffee break</td></tr>
-                                <tr><td>10:30 - 13:00</td><td>Technical session (8 papers)</td></tr>
-                                <tr><td>13:00 - 14:00</td><td>Lunch break</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <aside class="speaker-col card">
-                        <h4>Keynote Speaker</h4>
-                        <p><strong>Name TBA</strong><br>Affiliation</p>
-                        <p><strong>Title:</strong> TBA</p>
-                        <p class="small">Abstract and bio to be announced.</p>
-                    </aside>
-        </div>
-    </section>
-
-    <section id="program-committee">
-        <h2>Program Committee</h2>
-        <div class="committee">
-            <div class="committee-member">
-                <strong>Debasish Pattanayak</strong><br>
-                IIT Indore
-            </div>
-            <div class="committee-member">
-                <strong>Mayank Raikwar</strong><br>
-                University of Oslo
-            </div>
-        </div>
-    </section>
-
-    <section id="submission">
-        <h2>Paper Submission</h2>
-        <div class="card">
-            <div class="date-item">
-                <strong>Submission Deadline</strong>
-                <span>March 25, 2026</span>
-            </div>
-            <div style="margin-top:0.75rem">
-                <strong>Paper format</strong>
-                <p class="small" style="margin:0.25rem 0 0">Full papers: up to 8 pages (excluding references). Short papers: up to 4 pages. Use the <a href="https://www.ieee.org/conferences/publishing/templates">IEEE conference template</a>.</p>
-            </div>
-            <div style="margin-top:0.75rem">
-                <div class="submission-portal-box">
-                    <p class="small" style="margin:0 0 0">Submit your paper through EasyChair.</p>
-                    <a class="submission-cta" href="#" aria-disabled="true">Coming soon</a>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><span class="brand-icon">⛓️</span> DISTRESS 2026</h3>
+                    <p>1st Workshop on Decentralized Immutable Secure Tamper-Resistant Encrypted Searchable Storage</p>
+                    <p class="footer-conference">Co-located with <a href="https://icbc2026.ieee-icbc.org/" target="_blank">IEEE ICBC 2026</a></p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#topics">Topics</a>
+                    <a href="#dates">Important Dates</a>
+                    <a href="#committee">Committee</a>
+                    <a href="#submission">Submission</a>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:subhra.mazumdar@iiti.ac.in">subhra.mazumdar@iiti.ac.in</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:avishek.majumder1991@gmail.com">avishek.majumder1991@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia</p>
+                    <p><i class="far fa-calendar"></i> 5 June 2026</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="patrons">
-        <h2>Patrons</h2>
-        <div class="card">
-            <div class="sponsors-grid">
-                <div class="placeholder">Patrons logos will appear here.</div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DISTRESS Workshop Organizers. All rights reserved.</p>
+                <p class="footer-note">This is the first edition of the DISTRESS workshop, focusing on integrating blockchain immutability with privacy-preserving encrypted search.</p>
             </div>
         </div>
-    </section>
-
-    <section id="technical-sponsors">
-        <h2>Technical Sponsors</h2>
-        <div class="card">
-            <div class="sponsors-grid">
-                <div class="placeholder">Technical sponsors' logos will appear here.</div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer" id="contact">
-        <p>DISTRESS 2026 — Workshop at <a href="https://icbc2026.ieee-icbc.org/">IEEE ICBC 2026</a></p>
-        <p class="small">Organisers: <a href="mailto:subhra.mazumdar@iiti.ac.in">subhra.mazumdar@iiti.ac.in</a>, <a href="mailto:avishek.majumder1991@gmail.com">avishek.majumder1991@gmail.com</a></p>
     </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('mobile-show');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.querySelector('.nav-links').classList.remove('mobile-show');
+                }
+            });
+        });
+        
+        // Add active class to nav links on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
